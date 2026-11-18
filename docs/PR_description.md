@@ -46,3 +46,5 @@ loosened_spec            exit 1 — blocked: integrity
 Giới hạn gồm MockLLM, judge replay công khai, cỡ mẫu 5 seed và baseline/base-spec cần nguồn tin cậy. Chưa đo người dùng thật. Với 5 seed, lỗi hiếm chưa được phát hiện ổn định. Eval card có giải thích ngưỡng, slice và giới hạn integrity.
 
 CI GitHub và merge vào main đang chờ sau khi commit/push và mở PR trong fork. Link repo nộp LMS lấy từ fork của người học.
+
+Bài nộp M1–M7 đã được push lên main tại commit 3d0e412. PR submission/ci-review cập nhật trạng thái này và chạy CI trên toàn bộ bài nộp. Kiểm tra local đạt 34 test Lab 9, eval set v1/v2 có 0 lỗi. Trạng thái CI GitHub được theo dõi tại PR.
