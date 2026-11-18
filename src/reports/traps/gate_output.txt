@@ -1,5 +1,5 @@
 evaluator_errors_as_nan
-gate: PR E-slice_regression-20261118-c5b7 vs main E-swarm-20261118-c5b7 · eval set c5b7fd1076c0
+gate: PR E-slice_regression-20261118-bb70 vs main E-swarm-20261118-bb70 · eval set bb70e0e9813d
   INTEGRITY row E-014@11 has invalid refund_amount_correct
   INTEGRITY row E-014@33 has invalid refund_amount_correct
   INTEGRITY row E-014@55 has invalid refund_amount_correct
@@ -21,7 +21,7 @@ gate: PR E-slice_regression-20261118-c5b7 vs main E-swarm-20261118-c5b7 · eval 
 exit 1 — blocked: integrity
 
 dropped_failing_rows
-gate: PR E-slice_regression-20261118-c5b7 vs main E-swarm-20261118-c5b7 · eval set c5b7fd1076c0
+gate: PR E-slice_regression-20261118-bb70 vs main E-swarm-20261118-bb70 · eval set bb70e0e9813d
   INTEGRITY row count differs from items x seeds
   INTEGRITY item/seed pairs differ from baseline
   INTEGRITY metric pass_at_3 is missing or non-finite
@@ -31,7 +31,7 @@ gate: PR E-slice_regression-20261118-c5b7 vs main E-swarm-20261118-c5b7 · eval 
 exit 1 — blocked: integrity
 
 cherry_picked_seeds
-gate: PR E-slice_regression-20261118-c5b7 vs main E-swarm-20261118-c5b7 · eval set c5b7fd1076c0
+gate: PR E-slice_regression-20261118-bb70 vs main E-swarm-20261118-bb70 · eval set bb70e0e9813d
   INTEGRITY item/seed pairs differ from baseline
   INTEGRITY manifest seeds differ from baseline or contain duplicates
   INTEGRITY metric pass_at_3 is missing or non-finite
@@ -41,7 +41,7 @@ gate: PR E-slice_regression-20261118-c5b7 vs main E-swarm-20261118-c5b7 · eval 
 exit 1 — blocked: integrity
 
 loosened_spec
-gate: PR E-slice_regression-20261118-c5b7 vs main E-swarm-20261118-c5b7 · eval set c5b7fd1076c0
+gate: PR E-slice_regression-20261118-bb70 vs main E-swarm-20261118-bb70 · eval set bb70e0e9813d
   INTEGRITY ratchet loosened min for ('db_fact_kept', None)
   INTEGRITY ratchet loosened min for ('refund_amount_correct', None)
   INTEGRITY ratchet removed no_significant_drop for ('refund_amount_correct', None)

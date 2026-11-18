@@ -35,7 +35,9 @@ def load_jsonl(path: Path) -> list[dict[str, Any]]:
 
 
 def sha12(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest()[:12]
+    # Git may check out CRLF on Windows and LF on Linux.
+    content = path.read_bytes().replace(b"\r\n", b"\n")
+    return hashlib.sha256(content).hexdigest()[:12]
 
 
 CLAIM_FAILURE_MODES: dict[str, list[str]] = {
