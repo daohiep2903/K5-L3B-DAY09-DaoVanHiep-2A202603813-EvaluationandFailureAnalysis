@@ -2,8 +2,8 @@
 
 Card này đi kèm mỗi báo cáo và được dùng lại ở Day 10.
 
-- **Run ID / eval set SHA:** `E-swarm-20261118-9f3e` · eval set SHA `9f3ee10c5e7b`
-- **Phiên bản:** code (working tree `starter/d09`, pending commit) · eval set v1 (sha `9f3ee10c5e7b`) · metric_spec v1.0 · grader (working tree `starter/d09`, pending commit) · seeds 11/22/33/44/55
+- **Run ID / eval set SHA:** `E-swarm-20261118-6a48` · eval set SHA `6a48d2e5a5ff`
+- **Phiên bản:** code (working tree `starter/d09`, pending commit) · eval set v1 (sha `6a48d2e5a5ff`) · metric_spec v1.0 · grader (working tree `starter/d09`, pending commit) · seeds 11/22/33/44/55
 - **Eval set:** v1, 14 item × 5 seed, nguồn `lab8_public`; nhãn: `labels_v1.json` (tách biệt khỏi eval items)
 
 ## Metric & ngưỡng (từ `metric_spec.yaml`)
@@ -73,7 +73,7 @@ Ngoại lệ (waiver) cần 2 người duyệt và ghi lý do vào PR.
 
 ## M5 — Eval set v2 và slice gate
 
-Baseline `E-swarm-20261118-c5b7`, eval set SHA `c5b7fd1076c0`, gồm 28 item × 5 seed (140 trial). Eval set v2 giữ 14 item v1 và thêm 14 item adversarial. Mọi cơ chế đã ánh xạ trong `config/fm_map.yaml`, mỗi FM bị tấn công có ít nhất 3 item.
+Baseline `E-swarm-20261118-bb70`, eval set SHA `bb70e0e9813d`, gồm 28 item × 5 seed (140 trial). Eval set v2 giữ 14 item v1 và thêm 14 item adversarial. Mọi cơ chế đã ánh xạ trong `config/fm_map.yaml`, mỗi FM bị tấn công có ít nhất 3 item.
 
 Trong v2, C-010 được bổ sung FM-07 vì O-107 có các claim C-011/C-012 mà biến thể `sibling_refund` có thể hoàn nhầm. Metric FM-08 dùng `reply_matches_ledger`.
 
@@ -125,6 +125,6 @@ cherry_picked_seeds      exit 1 — blocked: integrity
 loosened_spec            exit 1 — blocked: integrity
 ```
 
-Bộ test Lab 9 có 34 test qua, gồm các ca bổ sung cho dòng trùng thay thế một dòng hợp lệ, evaluator_failures trên report xanh, row null, metric inf, đổi slice và nới điều kiện slice.
+Bộ test Lab 9 có 35 test qua, gồm các ca bổ sung cho dòng trùng thay thế một dòng hợp lệ, evaluator_failures trên report xanh, row null, metric inf, đổi slice và nới điều kiện slice.
 
 Giới hạn còn lại là report tự khai toàn bộ dữ liệu vẫn có thể bị giả mạo nhất quán giữa rows và metrics. Integrity hiện kiểm tra cấu trúc và tính đầy đủ, chưa chứng thực trace hoặc nguồn gốc artifact. Ratchet cần truyền base-spec tin cậy, và không thể bảo vệ nếu người chạy cung cấp cả baseline/base-spec đã bị thay đổi.

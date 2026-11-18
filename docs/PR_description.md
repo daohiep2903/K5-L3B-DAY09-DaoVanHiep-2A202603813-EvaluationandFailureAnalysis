@@ -1,8 +1,8 @@
-﻿# Hoàn thành Lab 9 M1–M7 — Evaluation and Failure Analysis
+# Hoàn thành Lab 9 M1–M7 — Evaluation and Failure Analysis
 
 Bài cá nhân của Đào Văn Hiệp. Eval set v1 có 14 item, v2 có 28 item, mỗi item chạy trên 5 seed. Đã triển khai code graders, judge calibration, paired bootstrap, slice gate, pass@k/pass^k và integrity/ratchet.
 
-Baseline v1 `E-swarm-20261118-9f3e`, SHA `9f3ee10c5e7b`. Baseline v2 `E-swarm-20261118-c5b7`, SHA `c5b7fd1076c0`.
+Baseline v1 `E-swarm-20261118-6a48`, SHA `6a48d2e5a5ff`. Baseline v2 `E-swarm-20261118-bb70`, SHA `bb70e0e9813d`.
 
 Core cho fixed qua gate và chặn seeded_regression.
 
@@ -47,4 +47,4 @@ Giới hạn gồm MockLLM, judge replay công khai, cỡ mẫu 5 seed và basel
 
 CI GitHub và merge vào main đang chờ sau khi commit/push và mở PR trong fork. Link repo nộp LMS lấy từ fork của người học.
 
-Bài nộp M1–M7 đã được push lên main tại commit 3d0e412. PR submission/ci-review cập nhật trạng thái này và chạy CI trên toàn bộ bài nộp. Kiểm tra local đạt 34 test Lab 9, eval set v1/v2 có 0 lỗi. Trạng thái CI GitHub được theo dõi tại PR.
+Bài nộp M1–M7 đã được push lên main tại commit 3d0e412. PR submission/ci-review cập nhật trạng thái này và chạy CI trên toàn bộ bài nộp. Kiểm tra local đạt 35 test Lab 9, eval set v1/v2 có 0 lỗi. Trạng thái CI GitHub được theo dõi tại PR.

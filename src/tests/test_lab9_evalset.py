@@ -57,3 +57,15 @@ def test_check_rejects_missing_tags(tmp_path, evalset_cli):
     result = evalset_cli("--check")
     assert result.returncode == 1, result.stdout + result.stderr
     assert "failure_modes empty" in result.stdout
+
+@pytest.mark.student
+def test_eval_set_sha_is_independent_of_line_endings(tmp_path):
+    from lab9.evalset import sha12
+
+    path = tmp_path / 'items.jsonl'
+    path.write_bytes(b'{"item_id":"E-001"}\n')
+    expected = sha12(path)
+    path.write_bytes(b'{"item_id":"E-001"}\r\n')
+    assert sha12(path) == expected
+    path.write_bytes(b'{"item_id":"E-002"}\n')
+    assert sha12(path) != expected
